@@ -1,0 +1,138 @@
+:root{
+    --primary-color:#bc6c25;
+    --secondary-color:#4d3822;
+    --hover-color:#e76f51;
+    --section-color:#b78752;
+}
+
+*{
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/*! Navbar */
+
+.navbar{
+    background-color: transparent !important;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+}
+
+.navbar .container{
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+
+.navbar-nav {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    color: var(--primary-color);
+}
+
+/*! Corousel */
+
+.carousel-item{
+    height: 100vh;
+}
+
+
+.carousel-item img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption{
+    /* border: 5px solid red; */
+    bottom: 40%;
+}
+
+.carousel-caption .btn{
+    background-color: var(--primary-color) !important;
+    border: none;
+    width: 10rem;
+    color: white;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.carousel-caption .btn:first-child{
+    background-color: transparent !important;
+}
+.carousel-caption .btn:first-child:hover{
+    background-color: white !important;
+    color: black;
+}
+
+.hero{
+    position: relative;
+    z-index: 3;
+}
+
+.black{
+    width: 350px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.83);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(40deg);
+}
+.carousel-indicators{
+    /* border: 5px solid red !important; */
+
+    gap: 0.7rem !important;
+}
+
+.carousel-indicators button{
+    background-color: var(--primary-color ) !important;
+    padding: 0.1rem !important;
+    width: 3rem !important;
+}
+
+
+
+/*! About */
+
+
+section#about{
+    /* height: 100vh; */
+    background-color: var(--secondary-color) !important;
+}
+
+.image-container img{
+    width: 100%;
+}
+
+.image-container{
+    /* border: 5px solid red; */
+    position: relative;
+}
+
+.about-image-info{
+    background: linear-gradient(
+        to bottom, rgba(0, 0, 0, 0.5), rgba(188, 108, 37, 1)
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section#about button{
+    background-color: var(--primary-color);
+    border: none;
+}
+
+/* People */
+
+section#people{
+    /* height: 100vh; */
+}
